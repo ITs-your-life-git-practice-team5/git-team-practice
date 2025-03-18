@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Account Page</title>
+
+    <style>
+      div,
+      table,
+      td,
+      p {
+        margin: 15px;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 헤더 스타일 */
+      .header {
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        align-items: center; /* 세로 가운데 정렬 */
+        justify-content: start;
+        background-color: black;
+        padding: 0px; /* 양옆 여백 */
+        margin: 0px;
+      }
+
+      /* Netflix 로고 스타일 */
+      .Netflix-Logo {
+        height: 100%; /* 헤더 높이에 맞게 */
+        align-self: flex-start; /* 왼쪽 정렬 */
+      }
+
+      table {
+        width: 100%;
+        table-layout: fixed;
+      }
+      td {
+        text-align: center; /* 기본적으로 모든 셀 중앙 정렬 */
+        padding: 15px;
+      }
+
+      td:nth-child(2) {
+        text-align: left; /* 두 번째 열만 왼쪽 정렬 */
+      }
+
+      .title {
+        font-size: 45px;
+        font-weight: lighter;
+      }
+
+      #subtitle {
+        justify-content: start;
+      }
+
+      #content {
+        text-align: center;
+      }
+
+      td#link {
+        text-align: right;
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer; /* 마우스를 올리면 손가락 모양 */
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 0 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        class="Netflix-Logo"
+        src="./Netflix-Logo.jpg"
+        alt="Netflix Logo" />
+    </div>
+
+    <div class="container">
+      <p class="title">계정</p>
+      <hr />
+
+      <div class="creditInfo">
+        <table>
+          <tr>
+            <td><p id="subtitle">멤버십 & 결제 정보</p></td>
+            <td>chichi0512@gmail.com</td>
+            <td id="link">계정 이메일 변경</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>비밀번호: ******</td>
+            <td id="link">비밀번호 변경</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>전화번호: 010-1234-5678</td>
+            <td id="link">휴대폰 번호 변경</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>신용카드: **** **** **** 4324</td>
+            <td id="link">결제 정보 관리</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>다음 결제일은 2025년 4월 13일입니다.</td>
+            <td id="link">예비 결제 수단 등록</td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+
+      <div class="infoDetail">
+        <table>
+          <tr>
+            <td><p id="subtitle">멤버십 상세 정보</p></td>
+            <td id="content">프리미엄</td>
+            <td id="link">멤버십 변경</td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+
+      <div class="securityInfo">
+        <table>
+          <tr>
+            <td><p id="subtitle">보안 & 개인 정보</p></td>
+            <td id="content">
+              이 계정에 대한 접근 권한을 관리하고 가장 최근에 사용된 디바이스
+              등을 확인하세요.
+            </td>
+            <td id="link">보안 설정</td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+
+      <div class="profile">
+        <p id="subtitle">프로필 & 자녀 보호 설정</p>
+      </div>
+
+      <div class="settings">
+        <p id="subtitle">설정</p>
+      </div>
+      <hr />
+    </div>
+  </body>
+</html>

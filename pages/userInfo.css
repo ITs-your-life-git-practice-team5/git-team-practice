@@ -1,0 +1,70 @@
+div,
+table,
+td,
+p {
+  margin: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 헤더 스타일 */
+.header {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center; /* 세로 가운데 정렬 */
+  justify-content: start;
+  background-color: black;
+  padding: 0px; /* 양옆 여백 */
+  margin: 0px;
+}
+
+/* Netflix 로고 스타일 */
+.Netflix-Logo {
+  height: 100%; /* 헤더 높이에 맞게 */
+  align-self: flex-start; /* 왼쪽 정렬 */
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+td {
+  text-align: center; /* 기본적으로 모든 셀 중앙 정렬 */
+  padding: 15px;
+}
+
+td:nth-child(2) {
+  text-align: left; /* 두 번째 열만 왼쪽 정렬 */
+}
+
+.title {
+  font-size: 45px;
+  font-weight: lighter;
+}
+
+#subtitle {
+  justify-content: start;
+}
+
+#content {
+  text-align: center;
+}
+
+td#link {
+  text-align: right;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer; /* 마우스를 올리면 손가락 모양 */
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
