@@ -44,5 +44,50 @@
       </div>
       <div class="footer-container"></div>
     </div>
+    <script>
+      const passwordInput = document.querySelector('.login-input-password');
+      const errorMessageElement = document.createElement('div');
+      errorMessageElement.className = 'error-message';
+      errorMessageElement.textContent = '비밀번호는 4~60자 사이여야 합니다.';
+
+      // 비밀번호 입력 필드 다음에 에러 메시지 삽입
+      passwordInput.parentNode.insertBefore(
+        errorMessageElement,
+        passwordInput.nextSibling
+      );
+
+      // 입력값 유효성 검사 함수
+      function validatePassword() {
+        const password = passwordInput.value;
+
+        if (
+          password.length > 0 &&
+          (password.length < 4 || password.length > 60)
+        ) {
+          // 유효하지 않은 비밀번호
+          passwordInput.classList.add('invalid');
+          errorMessageElement.classList.add('show');
+          return false;
+        } else {
+          // 유효한 비밀번호 또는 빈 필드
+          passwordInput.classList.remove('invalid');
+          errorMessageElement.classList.remove('show');
+          return true;
+        }
+      }
+
+      // 비밀번호 입력 필드에 이벤트 리스너 추가
+      passwordInput.addEventListener('input', validatePassword);
+      passwordInput.addEventListener('blur', validatePassword);
+
+      // 폼 제출 시 유효성 검사
+      document
+        .querySelector('.login-form')
+        .addEventListener('submit', function (event) {
+          if (!validatePassword()) {
+            event.preventDefault(); // 유효하지 않은 경우 폼 제출 방지
+          }
+        });
+    </script>
   </body>
 </html>
