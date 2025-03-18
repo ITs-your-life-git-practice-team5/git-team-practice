@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.profile-selection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0 60px;
+}
+
+.profile-title {
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 160px;
+}
+
+.profile:hover .profile-image {
+  border: 3px solid #fff;
+}
+
+.profile:hover .profile-name {
+  color: #fff;
+}
+
+.profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: border 0.3s ease;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  font-size: 18px;
+  color: #808080;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.manage-profiles {
+  margin-top: 30px;
+  padding: 10px 25px;
+  background-color: transparent;
+  color: #808080;
+  border: 1px solid #808080;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.manage-profiles:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* 프로필 색상 - 넷플릭스 스타일 */
+.profile-blue {
+  background-color: #1089ff;
+}
+.profile-red {
+  background-color: #e50914;
+}
+.profile-yellow {
+  background-color: #ffbc0b;
+}
+.profile-green {
+  background-color: #00c65e;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .profile-title {
+    font-size: 36px;
+  }
+
+  .profiles {
+    gap: 20px;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-title {
+    font-size: 24px;
+  }
+
+  .profiles {
+    gap: 15px;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .profile {
+    width: 80px;
+  }
+
+  .profile-name {
+    font-size: 14px;
+  }
+}
