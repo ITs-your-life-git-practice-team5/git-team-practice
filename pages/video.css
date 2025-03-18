@@ -6,7 +6,7 @@ body {
     background: #000;
 }
 /* 배경 이미지 및 레이아웃 */
-.hero {
+.home {
     background: url('/mnt/data/image.png') no-repeat center center/cover;
     height: 100vh;
     display: flex;
