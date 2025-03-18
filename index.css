@@ -119,16 +119,20 @@ body {
 
 /* 프로필 색상 - 넷플릭스 스타일 */
 .profile-blue {
-  background-color: #1089ff;
+  background-image: url(./pages/static/profile-blue.png);
+  background-size: cover;
 }
 .profile-red {
-  background-color: #e50914;
+  background-image: url(./pages/static/profile-red.png);
+  background-size: cover;
 }
 .profile-yellow {
-  background-color: #ffbc0b;
+  background-image: url(./pages/static/profile-yellow.png);
+  background-size: cover;
 }
 .profile-green {
-  background-color: #00c65e;
+  background-image: url(./pages/static/profile-green.png);
+  background-size: cover;
 }
 
 /* 반응형 디자인 */
