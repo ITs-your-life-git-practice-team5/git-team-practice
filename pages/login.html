@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="app-container">
+      <div class="header"><div class="logo"></div></div>
       <div class="content-container">
         <div class="login-container">
           <div class="login-title-container">
-            <p class="login-text">로그인</p>
+            <h1 class="login-text">로그인</h1>
           </div>
-          <form>
+          <form class="login-form">
             <div class="login-input-container">
-              <input type="text" class="login-input-id" />
-              <input type="password" class="login-input-password" />
+              <input
+                type="text"
+                class="login-input-id"
+                placeholder="이메일 주소 또는 휴대폰 번호"
+              />
+              <input
+                type="password"
+                class="login-input-password"
+                placeholder="비밀번호"
+              />
             </div>
             <div class="login-button-container">
               <input type="submit" class="login-button" value="로그인" />
