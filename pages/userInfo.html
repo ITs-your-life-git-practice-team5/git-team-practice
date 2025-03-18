@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .header {
+        width: 100vw;
+        height: 50px;
+        display: flex;
+        justify-content: start;
+        background-color: black;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; /* 테이블 너비 고정 */
+      }
+      .info {
+        text-decoration-color: darkgray;
+      }
+
+      .title {
+        font-size: 45px;
+        font-weight: lighter;
+        margin: 10px;
+      }
+
+      #subtitle {
+        justify-content: start;
+        margin: 10px;
+      }
+
+      #content {
+        text-align: center !important;
+      }
+      #link {
+        text-align: right;
+      }
+
+      .container {
+        max-width: 900px; /* 본문이 너무 넓지 않도록 제한 */
+        margin: 50px auto; /* 상하 여백 50px, 좌우 중앙 정렬 */
+        padding: 0 20px; /* 좌우 20px 여백 추가 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        class="Netflix-Logo"
+        src="./Netflix-Logo.jpg"
+        alt="Netflix Logo" />
+    </div>
+
+    <div class="container">
+      <p class="title">계정</p>
+      <hr />
+
+      <div class="creditInfo">
+        <table id="info">
+          <tr>
+            <td><p id="subtitle">멤버십 & 결제 정보</p></td>
+            <td><p id="link">계정 이메일 변경</p></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><p>비밀번호: ******</p></td>
+            <td><p id="link">비밀번호 변경</p></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><p>전화번호: 010-1234-5678</p></td>
+            <td><p id="link">휴대폰 번호 변경</p></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>신용카드: **** **** **** 4324</td>
+            <td><p id="link">결제 정보 관리</p></td>
+          </tr>
+          <td></td>
+          <td><p>다음 결제일은 2025년 4월 13일입니다.</p></td>
+          <td><p id="link">예비 결제 수단 등록</p></td>
+        </table>
+        <hr />
+      </div>
+
+      <div class="infoDetail">
+        <table>
+          <tr>
+            <td><p id="subtitle">멤버십 상세 정보</p></td>
+            <td>
+              <p id="content">프리미엄</p>
+            </td>
+            <td>
+              <p id="link">멤버십 변경</p>
+            </td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+
+      <div class="securityInfo">
+        <table>
+          <tr>
+            <td><p id="subtitle">보안 & 개인 정보</p></td>
+            <td>
+              <p id="content">
+                이 계정에 대한 접근 권한을 관리하고 가장 최근에 사용된 디바이스
+                등을 확인하세요.
+              </p>
+            </td>
+            <td id="link">멤버십 변경</td>
+          </tr>
+        </table>
+        <hr />
+      </div>
+
+      <div class="profile">
+        <p id="subtitle">프로필 & 자녀 보호 설정</p>
+      </div>
+
+      <div class="settings">
+        <p id="subtitle">설정</p>
+      </div>
+      <hr />
+    </div>
+  </body>
+</html>
