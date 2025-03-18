@@ -99,6 +99,24 @@ body {
   background-color: #454545;
 }
 
+.login-input-password.invalid {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+/* 에러 메시지 스타일 */
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 6px;
+  display: none;
+}
+
+/* 에러가 있을 때 에러 메시지 표시 */
+.error-message.show {
+  display: block;
+}
+
 /* 로그인 버튼 컨테이너 스타일 */
 .login-button-container {
   display: flex;
